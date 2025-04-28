@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkout_form">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/check_out"
+                android:textColor="#FF0000"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                android:textStyle="bold"/>
+
+
+
+            <EditText
+                android:id="@+id/Fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:hint="@string/full_name"
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/address"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/city"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+
+            <EditText
+                android:id="@+id/PostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="@string/postal_code"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/CardNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:hint="@string/card_number"
+                android:inputType="number"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/Expirydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:hint="@string/expiry_date_mm_yy"
+                android:inputType="number"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <EditText
+                android:id="@+id/editTextNumberPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:autofillHints=""
+                android:padding="12dp"
+                android:textAlignment="center"
+                android:textColorHint="#2F2C2C"
+                android:ems="10"
+                android:hint="@string/cvv"
+                android:inputType="numberPassword"
+                tools:ignore="VisualLintTextFieldSize"/>
+
+            <Button
+                android:id="@+id/Submit"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#5B27D9"
+                android:text="@string/checkout_button"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

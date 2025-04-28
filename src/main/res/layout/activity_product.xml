@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Product">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+
+                <ImageView
+                    android:id="@+id/ProductImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:contentDescription="@string/playstation5"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/ps5_image" />
+
+                <TextView
+                    android:id="@+id/ProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/sony_playstation_5_console"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/price_599_99cad"
+                    android:textColor="#2196F3"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/BuyNowButton"
+                    android:layout_width="106dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="#673AB7"
+                    android:text="@string/buy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/ProductImage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/microsoft_xbox_series_x"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/xbox_image" />
+
+                <TextView
+                    android:id="@+id/ProductName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/microsoft_xbox_series_x"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ProductPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/price_499_99cad"
+                    android:textColor="#2196F3"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/BuyNowButton2"
+                    android:layout_width="106dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="#673AB7"
+                    android:text="@string/buy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+                <ImageView
+                    android:id="@+id/ProductImage3"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/nintendo_switch_2"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/nintendo_image"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/ProductName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/nintendo_switch_2"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ProductPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/price_399_99cad"
+                    android:textColor="#2196F3"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/BuyNowButton3"
+                    android:layout_width="106dp"
+                    android:layout_height="52dp"
+                    android:backgroundTint="#673AB7"
+                    android:text="@string/buy"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
